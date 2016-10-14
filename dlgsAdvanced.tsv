@@ -1,0 +1,17 @@
+DLG ID	Development Log	Responsible Person	Status	Days In Status	Developer	Open Issues
+T17100	ADT / Transfer Center / Administration	Josh Kuntzelman	PQA 2	1	SOUTHARD, LUKE	3
+T18650	Grand Central / Reporting / TC RW Part 1: Transfer Center Activity RW template	Carrie Larson; Support, Rwqa	QA 1	4	WHALEN, PATRICK	19
+T19414	ADT / Transfer Center / Approval Tasks	Carrie Larson	QA 2	5	SOUTHARD, LUKE	0
+T19793	Grand Central/Transfer Center/Vital documentation in transfer center	Maryanne Heard; Mitchell George; Austen Vizcarra	QA 2	8	JING, YUNA	1
+T20158	Grand Central / Reporting / TC RW Part 2: Approvals reporting updates	Patrick Whalen	Dev Comp	25	WHALEN, PATRICK	5
+T20328	ADT / Transfer Center / Navigator Sections / Destination Planning	Tyler Mahal	QA 1	31	SOUTHARD, LUKE	3
+T20382	Grand Central / Reporting / TC RT Part 1: Transfer Center Real time Radar Content	Taylor White	PQA 2	4	WHALEN, PATRICK	0
+T20650	Grand Central / Transfer Center / Associated Admission - Create Encounter	Carrie Larson	QA 1	3	KUNTZELMAN, JOSH	0
+T20829	Grand Central / Reporting / TC LTT Part 1: Transfer Center Long Term Trending Basic Volumes metrics	Patrick Whalen	QA 1	7	WHALEN, PATRICK	0
+T20925	Grand Central / Transfer Center / Configuration of navigator template	Tyler Mahal	QA 2	1	JING, YUNA	0
+T21155	Grand Central / Reporting / TC RT Part 2: Approvals Reporting	Rylan McGee	QA 1	9	WHALEN, PATRICK	0
+T21373	ADT/TRANSFER CENTER/USE WEB PROVIDER LOOKUP CONTROL	Taylor White	Dev Comp	9	BEIERWALTES, DREW	0
+T21556	ADT / Transfer Center / Refresh on switch back and close request on context change to a different region	Austen Vizcarra	QA 1	10	KUNTZELMAN, JOSH	0
+T21606	Grand Central / Transfer Center / Adding Keyboard Accessibility to the Worklist	Carrie Larson	QA 1	5	HOBBIE, JACOB	3
+T21687	Grand Central / Transfer Center / Fixing Clicking on Approvals in Worklist	Jacob Hobbie	PQA 2		HOBBIE, JACOB	0
+T21756	Grand Central / Transfer Center / Add audit batch handling	Josh Kuntzelman	Dev Comp	3	KUNTZELMAN, JOSH	3

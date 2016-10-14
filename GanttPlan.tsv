@@ -1,0 +1,91 @@
+DLG	Project	Step	Start Date	End Date
+	Patient Access Logging	Under Dev	9/10/2016	9/17/2016
+	Patient Access Logging	PQA 1	9/17/2016	9/23/2016
+	Patient Access Logging	QA 1	9/23/2016	9/30/2016
+	Patient Access Logging	PQA 2	9/30/2016	10/7/2016
+	Patient Access Logging	QA 2	10/7/2016	10/14/2016
+	Admission Encounters - Create	Under Dev	9/26/2016	9/30/2016
+	Admission Encounters - Create	PQA 1	9/30/2016	10/7/2016
+	Admission Encounters - Create	QA 1	10/7/2016	10/14/2016
+	Admission Encounters - Create	PQA 2	10/14/2016	10/21/2016
+	Admission Encounters - Create	QA 2	10/21/2016	10/28/2016
+	Orders Composer	Under Dev	9/26/2016	10/13/2016
+	Orders Composer	PQA 1	10/13/2016	10/20/2016
+	Orders Composer	QA 1	10/20/2016	10/27/2016
+	Orders Composer	PQA 2	10/27/2016	11/3/2016
+	Orders Composer	QA 2	11/3/2016	11/10/2016
+	Contact Log - Core	Under Dev	9/26/2016	11/14/2016
+	Contact Log - Core	PQA 1	11/14/2016	11/21/2016
+	Contact Log - Core	QA 1	11/21/2016	12/5/2016
+	Contact Log - Core	PQA 2	12/5/2016	12/12/2016
+	Contact Log - Core	QA 2	12/12/2016	12/19/2016
+	Provider Lookup	Under Dev	9/26/2016	10/3/2016
+	Provider Lookup	PQA 1	10/3/2016	10/10/2016
+	Provider Lookup	QA 1	10/10/2016	10/17/2016
+	Provider Lookup	PQA 2	10/17/2016	10/24/2016
+	Provider Lookup	QA 2	10/24/2016	10/31/2016
+	Transportation	Under Dev	10/7/2016	10/14/2016
+	Transportation	PQA 1	10/14/2016	10/21/2016
+	Transportation	QA 1	10/21/2016	10/28/2016
+	Transportation	PQA 2	10/28/2016	11/4/2016
+	Transportation	QA 2	11/4/2016	11/11/2016
+	Read Only / Multi-Timezone	Under Dev	10/20/2016	10/27/2016
+	Read Only / Multi-Timezone	PQA 1	10/27/2016	11/3/2016
+	Read Only / Multi-Timezone	QA 1	11/3/2016	11/10/2016
+	Read Only / Multi-Timezone	PQA 2	11/10/2016	11/17/2016
+	Read Only / Multi-Timezone	QA 2	11/17/2016	11/28/2016
+	Document Collection	Under Dev	11/1/2016	12/2/2016
+	Document Collection	PQA 1	12/2/2016	12/9/2016
+	Document Collection	QA 1	12/9/2016	12/16/2016
+	Document Collection	PQA 2	12/16/2016	12/30/2016
+	Document Collection	QA 2	12/30/2016	1/9/2017
+	Orders - Transmittal	Under Dev	11/11/2016	11/18/2016
+	Orders - Transmittal	PQA 1	11/18/2016	11/28/2016
+	Orders - Transmittal	QA 1	11/28/2016	12/5/2016
+	Orders - Transmittal	PQA 2	12/5/2016	12/12/2016
+	Orders - Transmittal	QA 2	12/12/2016	12/19/2016
+	Admission Encounters - Related	Under Dev	11/30/2016	11/18/2016
+	Admission Encounters - Related	PQA 1	11/18/2016	11/25/2016
+	Admission Encounters - Related	QA 1	11/25/2016	12/2/2016
+	Admission Encounters - Related	PQA 2	12/2/2016	12/9/2016
+	Admission Encounters - Related	QA 2	12/9/2016	12/16/2016
+	Orders - Integration	Under Dev	11/28/2016	12/5/2016
+	Orders - Integration	PQA 1	12/5/2016	12/12/2016
+	Orders - Integration	QA 1	12/12/2016	12/19/2016
+	Orders - Integration	PQA 2	12/19/2016	1/3/2017
+	Orders - Integration	QA 2	1/3/2017	1/10/2017
+	Contact Log - Enhance	Under Dev	12/20/2016	1/6/2017
+	Contact Log - Enhance	PQA 1	1/6/2017	1/13/2017
+	Contact Log - Enhance	QA 1	1/13/2017	1/20/2017
+	Contact Log - Enhance	PQA 2	1/20/2017	1/27/2017
+	Contact Log - Enhance	QA 2	1/27/2017	2/3/2017
+	Admission Encounters - Rules	Under Dev	12/16/2016	12/23/2016
+	Admission Encounters - Rules	PQA 1	12/23/2016	1/5/2017
+	Admission Encounters - Rules	QA 1	1/5/2017	1/12/2017
+	Admission Encounters - Rules	PQA 2	1/12/2017	1/19/2017
+	Admission Encounters - Rules	QA 2	1/19/2017	1/26/2017
+	Validation Rules	Under Dev	1/9/2017	2/3/2017
+	Validation Rules	PQA 1	2/3/2017	2/10/2017
+	Validation Rules	QA 1	2/10/2017	2/17/2017
+	Validation Rules	PQA 2	2/17/2017	2/24/2017
+	Validation Rules	QA 2	2/24/2017	3/3/2017
+	Approval Autocompletion	Under Dev	12/20/2016	1/10/2017
+	Approval Autocompletion	PQA 1	1/10/2017	1/17/2017
+	Approval Autocompletion	QA 1	1/17/2017	1/24/2017
+	Approval Autocompletion	PQA 2	1/24/2017	1/31/2017
+	Approval Autocompletion	QA 2	1/31/2017	2/7/2017
+	Confidentiality and Privacy	Under Dev	1/9/2017	2/9/2017
+	Confidentiality and Privacy	PQA 1	2/9/2017	2/16/2017
+	Confidentiality and Privacy	QA 1	2/16/2017	2/23/2017
+	Confidentiality and Privacy	PQA 2	2/23/2017	3/2/2017
+	Confidentiality and Privacy	QA 2	3/2/2017	3/9/2017
+	Admission Encounters -Bed Planning	Under Dev	2/3/2017	2/10/2017
+	Admission Encounters -Bed Planning	PQA 1	2/10/2017	2/17/2017
+	Admission Encounters -Bed Planning	QA 1	2/17/2017	2/24/2017
+	Admission Encounters -Bed Planning	PQA 2	2/24/2017	3/3/2017
+	Admission Encounters -Bed Planning	QA 2	3/3/2017	3/10/2017
+	Contact Mover & Patient Merge	Under Dev	1/10/2017	1/24/2017
+	Contact Mover & Patient Merge	PQA 1	1/24/2017	1/31/2017
+	Contact Mover & Patient Merge	QA 1	1/31/2017	2/7/2017
+	Contact Mover & Patient Merge	PQA 2	2/7/2017	2/14/2017
+	Contact Mover & Patient Merge	QA 2	2/14/2017	2/21/2017

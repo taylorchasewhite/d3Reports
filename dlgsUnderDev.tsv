@@ -1,0 +1,15 @@
+DLG ID	Development Log	Responsible Person	Status	Days In Status	Developer	Open Issues
+T20808	ADT/TRANSFER CENTER/DOCUMENT COLLECTION	Drew Beierwaltes	Under Dev	59	BEIERWALTES, DREW	0
+T20825	Grand Central / Transfer Center / Associated Admission - Canceling the encounters	Josh Kuntzelman	Under Dev	58	KUNTZELMAN, JOSH	0
+T21001	GRAND CENTRAL/TRANSFER CENTER/TRANSPORTATION INFORMATION	Jacob Hobbie	Under Dev	49	HOBBIE, JACOB	5
+T21043	ADT/TRANSFER CENTER/PROPERLY IMPLEMENT EDIT SECURITY FOR TRANSFER CENTER	Yuna Jing	Under Dev	46	JING, YUNA	0
+T21099	Grand Central / Reporting / TC LTT Part 2: View and Approvals metrics	Patrick Whalen	Under Dev	44	WHALEN, PATRICK	0
+T21197	ADT / Transfer Center / Order Integration	Luke Southard	Under Dev	38	SOUTHARD, LUKE	2
+T21515	ADT / TRANSFER CENTER / CONTACT LOG	Isaac Senior	Under Dev	15	SENIOR, ISAAC	0
+T21839	Grand Central / Transfer Center / Ensure Intake and Admission encounter are marked as Related	Josh Kuntzelman	Under Dev		KUNTZELMAN, JOSH	0
+T21840	ADT / Transfer Center / Advanced Orders Integration & Data synchronization	Luke Southard	Under Dev		SOUTHARD, LUKE	0
+T21841	Grand Central / Transfer Center / Create rules properties to link between Transfer Center encounters	Josh Kuntzelman	Under Dev		KUNTZELMAN, JOSH	0
+T21842	Grand Central / Transfer Center / Add Validations Before Completing a Request	Isaac Senior	Under Dev		SENIOR, ISAAC	0
+T21843	Grand Central / Transfer Center / Approval Autocompletion	Luke Southard	Under Dev		SOUTHARD, LUKE	0
+T21844	Grand Central / Transfer Center / Confidentiality and Privacy	Josh Kuntzelman	Under Dev		KUNTZELMAN, JOSH	0
+T21845	Grand Central / Transfer Center / Support Contact Mover & Patient Merge	Yuna Jing	Under Dev		JING, YUNA	0

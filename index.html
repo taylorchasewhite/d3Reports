@@ -1,0 +1,342 @@
+<html>
+<head>
+	<title>Transfer Center Reporting Dashboard</title>
+	<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+	<script type="text/javascript" src="d3-jetpack.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<script type="text/javascript" src="ganttD3v4.js"></script>
+	<script type="text/javascript" src="transfercenter.js"></script>
+	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="icon" href="acorn16.png">
+</head>
+<style>
+@font-face {
+  font-family: 'Segoe';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Segoe UI'), local('SegoeUI');
+}
+
+.alert {
+	border-bottom: gray solid 1px;
+	display:block;
+
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.overflowPlease {
+	overflow-x: auto;
+}
+
+.stepUnderDev {
+	fill:#5AB1FF;
+	stroke:#2E75B5;
+}
+
+.stepPQA1 {
+	fill:rgb(222, 58, 38);
+	stroke:rgb(201, 46, 28);
+}
+
+.stepQA1 {
+	fill:rgb(242, 130, 48);
+	stroke:rgb(230, 110, 32);
+}
+
+.stepPQA2 {
+	fill:rgb(255, 171, 67);
+	stroke:rgb(240, 163, 63);
+}
+
+.stepQA2 {
+	fill:rgb(192, 180, 76);
+	stroke:rgb(173, 167, 58);
+}
+
+.arc text {
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+
+.area {
+  fill: rgba(46,117,181,.5);
+  stroke:rgb(46,117,181);
+}
+
+.content {
+	width:85%;
+	width:85%;
+	margin:auto auto;
+}
+
+.alert.positive,.alert.caution,.alert.behind {
+	width: 60px;
+}
+
+.alert.positive{
+
+}
+
+.errorColor {
+	color: #D97777;
+	font-weight:bold;
+}
+.warningColor {
+	color: #D9C977;
+	font-weight:bold;
+}
+
+.goodColor {
+	color: #69B261;
+	font-weight:bold;
+}
+
+.rightAlign {
+	text-align:right;
+}
+
+.tableCell {
+	padding-bottom:15px;
+}
+
+td,th {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.alert .caution {
+}
+
+.alert.behind {
+
+}
+
+.alert .note {
+	width:75%;
+	margin-left: 10px;
+	margin-bottom:10px;
+	vertical-align:top;
+}
+
+.alert:hover {
+	background-color: rgba(128,128,128,.1);
+}
+
+.badges {
+	overflow-x:auto;
+	width:95% !important;
+}
+
+.footer {
+	margin-top:25px;
+	margin-bottom:25px;
+	color:rgba(128,128,128,.6);
+}
+
+.focus circle {
+  fill: red;
+  stroke: red;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.divTooltip {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	padding: 10px;
+	background-color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+}
+
+
+/*.tooltip {
+	border: 1px solid black;
+	border-box:box-sizing;
+	box-shadow: 0 0 1 1;
+	opacity:1;
+}*/
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+/*****************************************/
+div {
+	display: inline-block;
+}
+
+body {
+	font-family:'Segoe';
+	font-size:16;
+	background-image:url(fall.jpg);
+	background-position: right bottom; /*Positioning*/
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	background-size: 150px 150px;
+}
+h1 {
+	font-family: 'Calibri Light';
+	color:#2E75B5;
+	position:fixed;
+	background-color:white;
+}
+.h1 {
+	position:fixed;
+	background-color:white;
+	height:110px;
+	width:100%;
+	margin-top:-10px;
+}
+
+h2 {
+	font-family: 'Calibri Light';
+	color:#2E75B5;
+}
+
+</style>
+
+<body>
+	<div>
+		<div class="h1"></div>}
+			<h1 id="progressReport" data-toggle="collapse" data-target="#h1ProgressReport">Transfer Center Progress Report
+				<img src="falltree1.png" height="50px"></img>
+			</h1>
+		<div style="height:75px; width:100%; "></div>
+		<div id="h1ProgressReport" class="collapse in">
+			<h2 id="teamNotices" data-toggle="collapse" data-target="#h2TeamNotices">Team Notices</h2>
+			<div id="h2TeamNotices" class="content collapse out">
+				<div class="alert">
+					<div class="caution"></div>
+					<div class="note">
+						We're closing in on the UGM cut deadline. We've got to get destination planning in by 09/01/2016.
+					</div>
+				</div>
+				<div class="alert">
+					<div class="joy"></div>
+					<div class="note">
+						DLG <a href="#top">412312</a> moved to QA 1 Comp yesterday at 4:35 PM. Keep it up!
+					</div>
+				</div>		
+				<div class="alert">
+					<div class="behind"></div>
+					<div class="note">
+						DLG <a href="#top">456312</a> is 3 days overdue.
+					</div>
+				</div>		
+			</div>
+			<h2 id="CurrentWIP" data-toggle="collapse" data-target="#h2CurrentWIP">Current Work In Progress</h2>
+			<div id="h2CurrentWIP" class="content collapse in">
+				<div id="divDaysInStatusBadges" class="content collapse in">
+		
+				</div>
+				<div>
+				<table id="dlgTable">
+				</table>
+				</div>
+				<div  id="divWIPDonut" >
+					
+				</div>
+			</div>
+			<h2 id="efficiencyMetrics" data-toggle="collapse" data-target="#h2EfficiencyMetrics">Progress Over Time</h2>
+			<div id="h2EfficiencyMetrics" class="content collapse out">
+				<div id="divDaysInStatusContainer" class="content collapse in">
+		
+				</div>
+				<div id="divStatusOverTimeContainer" class="content collapse in">
+		
+				</div>
+			</div>
+			
+			<h2 id="" data-toggle="collapse" data-target="#"></h2>
+			<div class="content collapse in"></div>
+			<h2 id="UnderDevWIP" data-toggle="collapse" data-target="#h2UnderDevWIP">Under Development</h2>
+			<div id="h2UnderDevWIP" class="content collapse out">
+				<div id="divUnderDevBadges" class="content collapse in">
+		
+				</div>
+				<table id="underDevTable">
+				</table>
+			</div>
+			<h2 id="bottlenecks" data-toggle="collapse" data-target="#h2Bottlenecks">Current Bottlenecks</h2>
+			<div id="h2Bottlenecks" class="content collapse out">
+				<table id="bottleNeckDesignTable">
+				</table>
+			</div>
+			<h2 id="ganttChart" data-toggle="collapse" data-target="#h2GanttChart">Gantt Chart</h2>
+			<div id="h2GanttChart" class="content collapse in">
+				<div id="divGanttChart" class="collapse in overflowPlease"></div>
+				<table id="ganttChartTable">
+				</table>
+			</div>
+		</div>
+		<div class="footer">
+			
+		</div>
+	</div>
+</body>
+<script>
+	initialize();
+</script>
+</html>
